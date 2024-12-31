@@ -19,8 +19,7 @@ import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 
-@NoArgsConstructor
-@AllArgsConstructor
+
 @Data
 @Entity
 @ToString(exclude = "domaines") // Exclure le champ 'domaines' de la méthode toString()
