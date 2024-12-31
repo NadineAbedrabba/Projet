@@ -1,0 +1,72 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous" />
+
+<div class="container">
+<div class="row">
+		<div class="col-12">
+			<!-- Page title -->
+			<div class="my-5">
+				<div class="row align-items-center">
+                    <div class="col-md-6">
+                        <div class="mb-3">
+                            <h5 class="card-title" style="color: #6096b3;">Nouveau Employée <span class="text-muted fw-normal ms-2"></span></h5>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="d-flex flex-wrap align-items-center justify-content-end gap-2 mb-3">
+                            
+                            <div>
+                                <a (click)="addCollaborateur()"  data-bs-toggle="modal" data-bs-target=".add-new" class="btn btn-primary"><i class="bx bx-plus me-1" ></i> Save</a>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+				<hr>
+			</div>
+			<!-- Form START -->
+			<form class="file-upload">
+				<div class="row mb-5 gx-5">
+					<!-- Contact detail -->
+					<div class="col-xxl-8 mb-5 mb-xxl-0">
+						<div class="bg-secondary-soft px-4 py-5 rounded">
+							<div class="row g-3">
+								<h4 class="mb-4 mt-0" style="color: #6096b3;" >Informations Personnels</h4>
+								<!-- First Name -->
+								<div class="col-md-6">
+									<label class="form-label">Nom *</label>
+									<input type="text" class="form-control" placeholder="" aria-label="First name" value="Scaralet" [(ngModel)]="newCollaborateur.nomCollaborateur" name="nomCollaborateur">
+								</div>
+								<!-- Last name -->
+								<div class="col-md-6">
+									<label class="form-label">Prénom *</label>
+									<input type="text" class="form-control" placeholder="" aria-label="Last name" value="Doe"  [(ngModel)]="newCollaborateur.prenomCollaborateur" name="prenomCollaborateur">
+								</div>
+								<!-- Phone number -->
+								<div class="col-md-6">
+									<label class="form-label">Téléphone *</label>
+									<input type="text" class="form-control" placeholder="" aria-label="Phone number" value="(333) 000 555" [(ngModel)]="newCollaborateur.telCollaborateur"name="telCollaborateur">
+								</div>
+								<!-- Date de naissance -->
+								<div class="col-md-6">
+									<label class="form-label">Date de naissance *</label>
+									<input type="date" class="form-control" placeholder="" aria-label="Date de naissance" value="jj/MM/yyyy" [(ngModel)]="newCollaborateur.dateDeNaissance" name="dateDeNaissance">
+								</div>
+								<!-- Email -->
+								<div class="col-md-6">
+									<label for="inputEmail4" class="form-label">Email *</label>
+									<input type="email" class="form-control" id="inputEmail4" value="example@homerealty.com"[(ngModel)]="newCollaborateur.emailCollaborateur"name="emailCollaborateur">
+								</div>
+								<!-- Skype -->
+								<div class="col-md-6">
+									<label class="form-label">Position *</label>
+									<input type="text" class="form-control" placeholder="" aria-label="position" value="Position" [(ngModel)]="newCollaborateur.positionCollaborateur"name="positionCollaborateur">
+								</div>
+							</div> <!-- Row END -->
+						</div>
+					</div>
+					
+				</div>
+			</form> <!-- Form END -->
+		</div>
+	</div>
+	</div>

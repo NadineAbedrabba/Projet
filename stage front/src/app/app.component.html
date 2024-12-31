@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <title>Bootstrap Example</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body class="p-3 m-0 border-0 bd-example m-0 border-0">
+
+    <!-- Example Code -->
+    <div id="cc">
+      <nav class="aa navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href=""><img src="assets/logo.png" alt="logo"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header" id="blue">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel" id="centre">Capgemini</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <div class="grand"></div>
+
+                <li class="nav-item">
+                  <!-- Use routerLink instead of href -->
+                  <a class="nav-link active" aria-current="page" [routerLink]="'/domaine'">Domaines de compétences</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" [routerLink]="'/collaborateurs'">Tableau de Bord</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" [routerLink]="'/projets'">Projets</a>
+                </li>
+
+                <div>
+                  <p>__________</p>
+                </div>
+                
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" [routerLink]="'/profil'">Profil</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" [routerLink]="'/securite-du-compte'">Sécurité du compte</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" [routerLink]="'/login'">Log out</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <!-- End Example Code -->
+
+    <router-outlet></router-outlet>  <!-- Display the routed components here -->
+  </body>
+</html>
