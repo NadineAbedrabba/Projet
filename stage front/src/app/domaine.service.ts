@@ -9,7 +9,7 @@ const httpOptions = {
   providedIn: 'root'
 })
 export class DomaineService {
-  apiURL: string = 'http://10.0.3.55:8080/stage/api/domaine';
+  apiURL: string = '/stage/api/domaine';
 
   constructor(private http: HttpClient) { }
   listeDomaine(): Observable<Domaine[]> {
