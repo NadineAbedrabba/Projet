@@ -8,7 +8,7 @@ const httpOptions = {headers: new HttpHeaders( {'Content-Type': 'application/jso
   providedIn: 'root'
 })
 export class CompetenceService {
-  apiURL: string = 'http://localhost:8080/stage/api/competence';
+  apiURL: string = 'api/competence';
 
   competence! : Competence ; 
   competences! : Competence[] ;
