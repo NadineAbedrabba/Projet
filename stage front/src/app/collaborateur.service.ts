@@ -10,7 +10,7 @@ const httpOptions = {headers: new HttpHeaders( {'Content-Type': 'application/jso
 })
 export class CollaborateurService {
 
-  apiURL: string = 'http://localhost:8080/stage/api/collaborateur';
+  apiURL: string = '/api/collaborateur';
 
 collaborateur! : Collaborateur ; 
 collaborateurs! : Collaborateur[] ;
